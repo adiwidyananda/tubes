@@ -103,3 +103,18 @@ p{
 .logo3:hover{
 	background-color: #1b1b1d;
 }
+.input-ctr{
+	position: relative;
+}
+.input-ctr input {
+	padding: 10px 15px;
+	border: solid 1px #ddd;
+	border-radius: 3px;
+	width: 100%;
+
+}
+.input-ctr i{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}

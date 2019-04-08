@@ -8,7 +8,9 @@ html,body {
 	padding-right: 5%;
 	padding-top: 1.5%;
 	position: fixed;
-
+	z-index: 99;
+	background-color: white;
+	width: 100%;
 }
 
 .menu b {
@@ -102,4 +104,23 @@ p{
 	background-color: rgb(25, 25, 25);
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+.line {
+	position: relative;
+	width: 200px;
+	height: 2px;
+	background: #ddd;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.titik {
+	width: 16px;
+	height: 16px;
+	background : #d64545;
+	border-radius: 50%;
+	position: absolute;
+	top: -7px;
+	left: 50%;
+	transform: translateX(-50%);
 }

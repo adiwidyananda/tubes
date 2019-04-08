@@ -1,0 +1,100 @@
+html, body {
+	width: 100%;
+}
+.menu{
+	display: flex;
+	padding-left: 5%;
+	padding-right: 3%;
+	padding-top: 1.5%;
+	height: 70px;
+	position: fixed;
+	z-index: 99;
+	background-color: #f8f8f8;
+	width: 100%;
+	border-bottom: 2px solid #ddd;
+}
+
+.menu b {
+	color : #d64545;
+	font-weight : bold;
+	font-size : 25px;
+	margin-top : -5px;
+	margin-left: 10px;	
+}
+.menu ul {
+	list-style: none;
+	display: flex;
+	margin-left: 300px;
+	margin-top: 0px;
+}
+.menu ul b{
+	margin-right: 20px;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 38px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	font-weight: 400;
+	font-size: 13px;
+	color: #777;
+	line-height: 20px;
+	color: #65686d;;
+	cursor: pointer;
+}
+.menu ul button {
+	
+	border-color: #be2a2a;
+	border-bottom-width: 3px;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: inherit;
+	margin-top: -5px;
+	height: 35px;
+}
+.menu ul b:hover {
+	background-color: #e7e7e7;
+}
+label {
+	font-size: 12px;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 10px;
+}
+input {
+	width: 100%;
+	padding-left: 5px;
+	height: 30px;
+}
+.isi {
+	padding-top: 60px;
+	width: 100%;
+	padding-bottom: 50px;
+}
+form {
+	margin-left: 380px;
+	margin-right: 380px;
+}
+.bottom {
+	width: 100%;
+	display: flex;
+	background-color: #1b1b1d;
+	color: #64696d;
+	padding-top: 25px;
+	font-size: 12px;
+	padding-left: 110px;
+	padding-right: 70px;
+	height: 70px;
+	margin-top: 150px;
+}
+.butn {
+	margin-left: 361px; 
+	background-color: white; 
+	margin-right: 5px; 
+	border: 1px solid #ccc; 
+	height: 40px;
+	border-radius: 5px;
+}
+.butn:hover {
+	background-color: #e7e7e7;
+}

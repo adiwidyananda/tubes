@@ -1,0 +1,100 @@
+html,body {
+	width: 100%;
+}
+.menu{
+	display: flex;
+	padding-left: 5%;
+	padding-right: 3%;
+	padding-top: 1.5%;
+	position: fixed;
+	z-index: 99;
+	height: 80px;
+	background-color: #f8f8f8;
+	width: 100%;
+}
+.menu b {
+	color : #d64545;
+	font-weight : bold;
+	font-size : 25px;
+	margin-top : -5px;
+	margin-left: 10px;	
+}
+.menu ul {
+	list-style: none;
+	display: flex;
+	margin-left: 300px;
+	margin-top: 0px;
+}
+.menu ul b{
+	margin-right: 20px;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 38px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 38px;
+	font-weight: 400;
+	font-size: 13px;
+	color: #777;
+	line-height: 20px;
+	color: #65686d;;
+	cursor: pointer;
+}
+.menu ul button {
+	border-color: #be2a2a;
+	border-bottom-width: 3px;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: inherit;
+	margin-top: -5px;
+	height: 35px;
+}
+.menu ul b:hover {
+	background-color: #e7e7e7;
+}
+
+.atas {
+	padding-top: 60px;
+}
+.line {
+	margin-top: 100px;
+	position: relative;
+	width: 1000px;
+	height: 2px;
+	background: #ddd;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.materi {
+	width: 100%;
+	padding-left: 110px;
+	padding-right: 110px;
+	display: flex;
+	height: 100%;
+}
+.buku {
+	display: flex;
+	border: 1px solid #ddd;
+	padding: 5px;
+	width: 280px;
+	border-radius: 10px;
+}
+.buku i {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 999px;
+	margin-right: 10px;
+}
+.bottom {
+	width: 100%;
+	display: flex;
+	background-color: #1b1b1d;
+	color: #64696d;
+	padding-top: 25px;
+	font-size: 12px;
+	padding-left: 110px;
+	padding-right: 70px;
+	height: 70px;
+	margin-top: 150px;
+}
