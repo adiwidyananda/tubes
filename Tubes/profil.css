@@ -7,8 +7,8 @@ html, body {
 	padding-right: 3%;
 	padding-top: 1.5%;
 	height: 72px;
-	position: fixed;
-	z-index: 99;
+/*	position: fixed;
+	z-index: 99;*/
 	background-color: #f8f8f8;
 	width: 100%;
 	border-bottom: 2px solid #ddd;
@@ -55,46 +55,46 @@ html, body {
 .menu ul b:hover {
 	background-color: #e7e7e7;
 }
-label {
-	font-size: 12px;
-	color: #333;
-	font-family: 'Roboto', sans-serif;
-	margin-top: 10px;
-}
-input {
-	width: 100%;
-	padding-left: 5px;
-	height: 30px;
-}
 .isi {
 	padding-top: 60px;
 	width: 100%;
 	padding-bottom: 50px;
 }
-form {
-	margin-left: 380px;
-	margin-right: 380px;
+.namaform {
+	background-color: #f5f5f5;
+	margin-bottom: 0;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: -30px;
+	border: 1px solid #ddd;
+}
+label {
+	font-weight: 500;
+    color: #555;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.butn {
+	margin-left: 330px; 
+	background-color: white; 
+	margin-right: 5px; 
+	border: 1px solid #ccc; 
+	height: 40px;
+	border-radius: 5px;
+	width: 100px;
+}
+.butn:hover {
+	background-color: #e7e7e7;
 }
 .bottom {
 	width: 100%;
 	display: flex;
 	background-color: #1b1b1d;
 	color: #64696d;
-	padding-top: 25px;
+	padding-top: 60px;
 	font-size: 12px;
 	padding-left: 110px;
 	padding-right: 70px;
-	height: 70px;
+	height: 130px;
 	margin-top: 150px;
-}
-.butn {
-	margin-left: 361px; 
-	background-color: white; 
-	margin-right: 5px; 
-	border: 1px solid #ccc; 
-	height: 40px;
-	border-radius: 5px;
-}
-.butn:hover {
-	background-color: #e7e7e7;
 }
