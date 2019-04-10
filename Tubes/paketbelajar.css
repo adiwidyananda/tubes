@@ -1,0 +1,163 @@
+html,body {
+	width: 100%;
+	margin: 0;
+}
+.menu{
+	display: flex;
+	padding-left: 7%;
+	padding-right: 5%;
+	padding-top: 1.5%;
+	/*position: fixed;
+	z-index: 99*/;
+	background-color: white;
+	width: 100%;
+}
+
+.menu b {
+	color : #d64545;
+	font-weight : bold;
+	font-size : 25px;
+	margin-top : -5px;
+	margin-left: 10px;	
+}
+.menu ul {
+	list-style: none;
+	display: flex;
+	margin-left: 250px;
+	margin-top: 0px;
+}
+.menu ul b{
+	margin-right: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #777;
+	line-height: 20px;
+	color: #696969;
+	cursor: pointer;
+}
+.menu ul button {
+	
+	border-color: #be2a2a;
+	border-bottom-width: 3px;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: inherit;
+	margin-top: -5px;
+	height: 35px;
+}
+.menu ul b:hover {
+	border-bottom: solid 3px #be2a2a;
+	color: #bd4444;
+}
+h2{
+	font-family:'Roboto',  sans-serif;
+	font-weight:600;
+
+}
+.judulred{
+	color: #d64545;
+}
+.line {
+	position: relative;
+	width: 200px;
+	height: 2px;
+	background: #ddd;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.titik {
+	width: 16px;
+	height: 16px;
+	background : #d64545;
+	border-radius: 50%;
+	position: absolute;
+	top: -7px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.tex{
+	color: #64686d;
+}
+.universitas .jurusan .semester{
+	padding-left: 8px;
+	padding-right: 20px;
+}
+.btn.btn-primary {
+    background: #d64545;
+    border-color: #be2a2a;
+}
+.paket {
+	background-color: #222534;
+	color: #d64545;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+} 
+.detil{
+	list-style: none;
+	padding: 0;
+	margin: 70px 0 30px;
+	border: 1px solid #eee;
+	border-radius: 5px 5px 4px 4px;
+	padding: 15px;
+	text-align: center;
+}
+li.topdetil{
+	background: #eee;
+	border-radius: 4px 4px 0 0;
+	margin: -15px -15px 10px;
+	padding: 15px 15px 30px;
+	border: 0;
+}
+.namapaket{
+	margin-top: 10px;
+	font-size: 24px;
+	color: #272727;
+	font-weight: bold;
+	line-height: 1;
+}
+.detilgold{
+	list-style: none;
+	padding: 0;
+	margin: 70px 0 30px;
+	border: 1px solid #eee;
+	border-radius: 5px 5px 4px 4px;
+	padding: 15px;
+	text-align: center;
+	background: #222534;
+	color: #fff;
+	border: 0;
+}
+.topdetil2{
+	background: #b32c2c;
+	border-radius: 4px 4px 0 0;
+	margin: -15px -15px 10px;
+	padding: 15px 15px 30px;
+	border: 0;
+}
+.namapaket2{
+
+}
+.bottom{
+	background: #1b1b1d;
+}
+.logo3 {
+	background-color: #d2d2d2;
+	padding: 5px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+.logo3:hover{
+	background-color: #1b1b1d;
+}
+.bottomm {
+	background-color: rgb(25, 25, 25);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+h3 p{
+	
+}
