@@ -1,4 +1,4 @@
-html, body {
+html,body {
 	width: 100%;
 }
 .menu{
@@ -6,14 +6,12 @@ html, body {
 	padding-left: 5%;
 	padding-right: 3%;
 	padding-top: 1.5%;
-	height: 72px;
 	position: fixed;
 	z-index: 99;
+	height: 80px;
 	background-color: #f8f8f8;
 	width: 100%;
-	border-bottom: 2px solid #ddd;
 }
-
 .menu b {
 	color : #d64545;
 	font-weight : bold;
@@ -33,7 +31,7 @@ html, body {
 	padding-top: 38px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 30px;
+	padding-bottom: 38px;
 	font-weight: 400;
 	font-size: 13px;
 	color: #777;
@@ -42,7 +40,6 @@ html, body {
 	cursor: pointer;
 }
 .menu ul button {
-	
 	border-color: #be2a2a;
 	border-bottom-width: 3px;
 	font-size: 14px;
@@ -55,46 +52,58 @@ html, body {
 .menu ul b:hover {
 	background-color: #e7e7e7;
 }
-.isi {
-	padding-top: 120px;
+.atas {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 100%;
-	padding-bottom: 50px;
+    background-color: #1b1b1d;
+    padding-left: 100px;
+    padding-top: 200px;
 }
-.namaform {
-	background-color: #f5f5f5;
-	margin-bottom: 0;
-	padding-top: 10px;
-	padding-left: 20px;
-	padding-bottom: -30px;
+.buku {
+	display: flex;
+	padding: 5px;
+	width: 280px;
+	border-radius: 10px;
+}
+.buku i {
+	padding: 20px;
 	border: 1px solid #ddd;
+	border-radius: 999px;
+	margin-right: 10px;
 }
-label {
-	font-weight: 500;
-    color: #555;
-    padding-bottom: 5px;
-    font-size: 14px;
+.buku p {
+	font-size: 12px;
 }
-.butn {
-	margin-left: 330px; 
-	background-color: white; 
-	margin-right: 5px; 
-	border: 1px solid #ccc; 
-	height: 40px;
-	border-radius: 5px;
-	width: 100px;
+.materi {
+	background-color: #f8f8f8;
 }
-.butn:hover {
-	background-color: #e7e7e7;
+.about {
+	padding-top: 50px;
+}
+.about p {
+	color: #777;
+	font-size: 14px;
 }
 .bottom {
 	width: 100%;
 	display: flex;
 	background-color: #1b1b1d;
 	color: #64696d;
-	padding-top: 60px;
+	padding-top: 25px;
 	font-size: 12px;
 	padding-left: 110px;
 	padding-right: 70px;
-	height: 130px;
+	height: 70px;
 	margin-top: 150px;
+}
+.butn {
+	margin-left: 361px; 
+	background-color: white; 
+	margin-right: 5px; 
+	border: 1px solid #ccc; 
+	height: 40px;
+	border-radius: 5px;
+}
+.butn:hover {
+	background-color: #e7e7e7;
 }
