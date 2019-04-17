@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/paketbelajar.css">
+</head>
+<body>
+		<div class="menu">
+  		<img style="max-height:25px;max-width: 25px; " src="<?= base_url() ?>assets/gambar/logo.png">
+  		<b>EXPERT COURSE</b>
+  		<ul>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Home/paket">Paket Belajar</a></b></li>
+        <li><b>Pendaftaran</b></li>
+        <li><b>Hubungi</b></li>
+        <li><b>Karir</b></li>
+        <li><b>Blog</b></li>
+        <li><button style="margin-right: 20px;" type="button" class="btn btn-danger"><i class='fas fa-user' style="margin-right: 2px;"></i><a style="text-decoration: none; color: white;" href="<?= base_url() ?>index.php/Home/login">Login</button></li>
+        <li><button type="button" class="btn btn-danger"><a style="text-decoration: none; color: white;" href="<?= base_url() ?>index.php/Home/daftar">Daftar</button></li></a>
+  		</ul>
+	 </div>
+    <div style="padding-top: 160px;" class="judul">
+      <div>
+        <center>
+          <h2>
+            MATA KULIAH DASAR AJA 
+            <span class="judulred">EXPERT COURSE</span>
+          </h2>
+          <div class="line">
+            <div class="titik"></div>
+          </div>
+          <p class="tex">Harga dibawah ini adalah harga per mahasiswa per mata kuliah dan per semester.Tidak ada biaya tambahan lagi selama satu semester.</p>
+        </center>
+          <div style="text-align: center;" class="container">
+            <div class="row">
+            <div class="col-sm-4">
+              Universitas
+              <div>
+                <select id="universitas" name="universitas">
+                  <option selected>Pilih Universitas</option>
+                  <option>Universitas Telkom</option>
+                  <option>Universitas Katholik Parahyangan</option>
+                  <option>Institut Teknologi Bandung</option>
+                  <option>Institut Teknologi Harapan Bangsa</option>
+                  <option>Universitas Widyatama</option>
+                  <option>Universitas Pendidikan Indonesia</option>
+                  <option>Institut Teknologi Nasional</option>
+                  <option>Universitas Kristen Maranta</option>
+                  <option>Universitas Padjadjaran</option>
+                  <option>Universitas Komputer Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              Jurusan
+              <div>
+                <select id="jurusan" name="jurusan">
+                  <option>PIlih Jurusan</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              Semester
+              <div>
+                <select id="semester" name="semester">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-12" style="text-align: center;">
+            <button style="margin-top: 20px;" class="btn btn-primary" type="submit"><i style="margin-right: 3px;" class="fas fa-search"></i>Cek Matkul</button>
+          </div>
+          <div class="paket">
+            <center>
+              <h6>paket</h6>
+            </center>
+            
+          </div>
+          <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="detil">
+                <center>
+                  <li class="topdetil">
+                    <div class="namapaket">BRONZE</div>
+                  </li>
+                  <li>5-10 pertemuan hingga UAS @90 menit</li>
+                  <li>Harga Per Mata Kuliah</li>
+                  <li>Satu Grup Belajar3-4 Orang. Minimal ajak dua teman</li>
+                  <li>Waktu dan Tempat fleksibel</li>
+                  <li>Grup line eksklusif dengan pengajar dan modul</li>
+                  <li>Akses gratis ribuan contoh soal</li>
+                  <li>
+                    <button class="btn btn-primary">ORDER NOW</button>
+                  </li>
+                </center>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="detil">
+                <center>
+                  <li class="topdetil">
+                    <div class="namapaket">SILVER</div>
+                  </li>
+                  <li>5-10 pertemuan hingga UAS @90 menit</li>
+                  <li>Harga Per Mata Kuliah</li>
+                  <li>Satu Grup Belajar3-4 Orang. Minimal ajak dua teman</li>
+                  <li>Waktu dan Tempat fleksibel</li>
+                  <li>Grup line eksklusif dengan pengajar dan modul</li>
+                  <li>Akses gratis ribuan contoh soal</li>
+                  <li>
+                    <button class="btn btn-primary">ORDER NOW</button>
+                  </li>
+                </center>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="detilgold">
+                <center>
+                  <li class="topdetil2">
+                    <div class="namapaket2">GOLD</div>
+                  </li>
+                  <li>5-10 pertemuan hingga UAS @90 menit</li>
+                  <li>Harga Per Mata Kuliah</li>
+                  <li>Satu Grup Belajar 1 orang</li>
+                  <li>Waktu dan Tempat fleksibel</li>
+                  <li>Grup line eksklusif dengan pengajar dan modul</li>
+                  <li>Akses gratis ribuan contoh soal</li>
+                  <li>
+                    <button class="btn btn-primary">ORDER NOW</button>
+                  </li>
+                </center>
+              </div>
+            </div>
+          </div> 
+          </div> 
+      </div>
+    </div>
+
+    <div  style="background-image: url('<?= base_url() ?>assets/gambar/background5.jpg'); padding-bottom: 50px; color: white">
+      <h3>Keterangan :</h3>
+      <p>1. Harga diatas adalah fixed, non negotiable</p>
+      <p>2. Harga belum termasuk biaya administrasi Rp 75.000,00/invoice</p>
+      <p>3. HArga yang tertera diatas adalah harga per mahasiswa</p>
+      <p>4. Untuk alur Pendaftaran, silahkan klik 
+        <font style="font-weight: bold;" color="red">
+          <a href="">disini</a>
+        </font>
+      </p>
+      <p>5. Untuk paket bronze A dan Silver A, harap mecari teman dalam 1 grup!</p>
+      <p>6. Start belajar untuk semester ganjil 2017/2018 tanggal 28 agustus 2017</p>
+      <p>7. Pendaftaran di tengah semester berjalan (ex : mahasiswa baru mendaftar di pekan ketiga minggu efektif) maka tidak ada penggantian pekan yang telah hilang sebelumnya dan harga tetap</p>
+      
+    </div>
+    <div class="bottom">
+  <div class="container" style="padding-top: 40px;">
+      <div class="row">
+        <div class="col-sm-3">
+          <center>
+              <img style="width: 500px; height: 128px; width: 128px;" src="<?= base_url() ?>assets/gambar/logo3.png">
+              <h4 style="color: #d2d2d2; margin-top: 10px;"><b>EXPERT COURSE</b></h4>
+              <d style="font-family: 'Roboto', sans-serif;font-weight: 400;color: #d2d2d2;"><b>#BimbelnyaMahasiswa</b></d>
+            </center>
+        </div>
+        <div class="col-sm-3">
+          <h4 style="color: #d2d2d2;"><b>TENTANG KAMI</b></h4></br>
+          <p style="color: #d2d2d2">Kontak</p>
+          <p style="color: #d2d2d2">Blog</p>
+        </div>
+        <div class="col-sm-3">
+          <h4 style="color: #d2d2d2;"><b>JADI BAGIAN DARI KAMI</b></h4></br>
+          <p style="color: #d2d2d2">Expert Squad</p>
+          <p style="color: #d2d2d2">Expert Team</p>
+          <p style="color: #d2d2d2">Karir</p>
+        </div>
+        <div class="col-sm-3">
+          <h4 style="color: #d2d2d2;"><b>CONTACT US</b></h4></br>
+          <div>
+            <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/line.png" width="40px;">
+            <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/facebook.png" width="40px;">
+            <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/instagram.png" width="40px;">
+            <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/youtube.png" width="40px;">
+          </div>
+        </div>
+      </div>
+   </div>
+</div>
+<div class="bottomm">
+  <center><d style="font-family: 'Roboto', sans-serif;font-weight: 400;color: #d2d2d2;">Expert Course 2019</d></center>
+</div>
+</body>
+</html>
