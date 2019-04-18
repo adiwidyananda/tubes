@@ -131,6 +131,7 @@
 				    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 				     <select name="universitas" style="width: 100%">
 				     	<option selected>Pilih Universitas</option>
+				     	<option>Telkom University</option>
 				     </select>
 				    </div>
                     <label><i class='fas fa-star' style="color: red;font-size: 6px;margin-left: 10px; margin-right: 5px;"></i><b style=" color:#64686d; font-size: 14px;">Pilih Mata Kuliah<b></label></br>

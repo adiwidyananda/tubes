@@ -22,15 +22,15 @@
 </head>
 <body>
   	<div class="menu">
-  		<img style="max-height:25px;max-width: 25px; " src="gambar/logo.png">
+  		<img style="max-height:25px;max-width: 25px; " src="<?= base_url() ?>assets/gambar/logo.png">
   		<b>EXPERT COURSE</b>
   		<ul>
-  			<li><b>Modul</b></li>
-  			<li><b>Presensi</b></li>
-  			<li><b>Pembayaran</b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/modul_pengajar/<?php echo $username; ?>">Modul</a></b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/presensi_pengajar/<?php echo $username; ?>">Presensi</a></b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/pembayaran_pengajar/<?php echo $username; ?>">Pembayaran</a></b></li>
   			<li><b>Tata Tertib</b></li>
   			<li><b>Profile</b></li>
-  			<li><b>Logout</b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/logout_pengajar">Logout</a></b></li>
   		</ul>
 	</div>
   <div class="atas">
@@ -40,70 +40,60 @@
   </div>
   <div class="materi">
     <div class="row">
+      <?php 
+      foreach ($matkul['pengajar']->result_array() as $matkul_pengajar){
+      ?>
+      <?php if ($matkul_pengajar['Fakultas'] == 'Teknik'): ?>
       <div class="col-sm-3">
     <div class="buku">
       <center><i style="font-size: 24px; margin-top: 10px;" class='fas fa-book'></i></center>
       <div>
-        <h6 style="margin-top: 10px; color: #333"><b>Kalkulus1</b></h6>
-        <p style="color: #777">10 Modul</p>
+        <h6 style="margin-top: 10px; color: #333"><b><?php echo $matkul_pengajar['nama_matkul'] ?></b></h6>
+        <p style="color: #777"><?php echo $matkul_pengajar['jml_modul'] ?> Modul</p>
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+  <?php endif ?>
+  <?php
+      }
+    ?>
+ 
+    </div>
+  </div>
+  <div class="atas">
+   <h4 style="color: #333;;font-family: 'Roboto', sans-serif; padding-left: 110px;"><b>Fakultas Ekonomi</b></h4>
+   <h4 style="color: #ddd; padding-left: 110px; margin-top: -20px;"><b>-----------------------</b></h4>
+  </div>
+  
+  <div class="materi">
+    <div class="row">
+      <?php 
+      foreach ($matkul['pengajar']->result_array() as $matkul_pengajar){
+      ?>
+      <?php if ($matkul_pengajar['Fakultas'] == 'Ekonomi'): ?>
+      <div class="col-sm-3">
     <div class="buku">
       <center><i style="font-size: 24px; margin-top: 10px;" class='fas fa-book'></i></center>
       <div>
-        <h6 style="margin-top: 10px; color: #333"><b>Kalkulus1</b></h6>
-        <p style="color: #777">10 Modul</p>
+        <h6 style="margin-top: 10px; color: #333"><b><?php echo $matkul_pengajar['nama_matkul'] ?></b></h6>
+        <p style="color: #777"><?php echo $matkul_pengajar['jml_modul'] ?> Modul</p>
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
-    <div class="buku">
-      <center><i style="font-size: 24px; margin-top: 10px;" class='fas fa-book'></i></center>
-      <div>
-        <h6 style="margin-top: 10px; color: #333"><b>Kalkulus1</b></h6>
-        <p style="color: #777">10 Modul</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="buku">
-      <center><i style="font-size: 24px; margin-top: 10px;" class='fas fa-book'></i></center>
-      <div>
-        <h6 style="margin-top: 10px; color: #333"><b>Kalkulus1</b></h6>
-        <p style="color: #777">10 Modul</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="buku">
-      <center><i style="font-size: 24px; margin-top: 10px;" class='fas fa-book'></i></center>
-      <div>
-        <h6 style="margin-top: 10px; color: #333"><b>Kalkulus1</b></h6>
-        <p style="color: #777">10 Modul</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="buku">
-      <center><i style="font-size: 24px; margin-top: 10px;" class='fas fa-book'></i></center>
-      <div>
-        <h6 style="margin-top: 10px; color: #333"><b>Kalkulus1</b></h6>
-        <p style="color: #777">10 Modul</p>
-      </div>
-    </div>
-  </div>
+  <?php endif ?>
+  <?php
+      }
+    ?>
  
     </div>
   </div>
 
   <div class="bottom">
     <p>Experts Course 2019</p>
-    <p style="margin-left: 900px;">Follow Us:</p>
-    <img class="logo3"src="gambar/logo/facebook.png" style="width: 20px;height: 20px;">
-    <img class="logo3"src="gambar/logo/instagram.png" style="width: 20px;height: 20px;margin-right: 5px;">
-    <img class="logo3"src="gambar/logo/youtube.png" style="width: 20px;height: 20px;">
+    <p style="margin-left: 880px;">Follow Us:</p>
+    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/facebook.png" style="width: 20px;height: 20px;">
+    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/instagram.png" style="width: 20px;height: 20px;margin-right: 5px;">
+    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/youtube.png" style="width: 20px;height: 20px;">
   </div>
 
   

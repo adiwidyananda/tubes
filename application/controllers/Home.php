@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
 	public function __construct(){
             parent::__construct();
+            $this->load->model('M_matkul');
     }
 
 	public function index(){
@@ -20,7 +21,8 @@ class Home extends CI_Controller {
 		$this->load->view('LoginPengajar');
 	} 
 	public function daftar() {
-		$this->load->view('pendaftaran');
+		$data['matkul']['pengajar'] = $this->M_matkul->get_matkul();
+		$this->load->view('pendaftaran',$data);
 	}
 	public function daftarpengajar() {
 		$this->load->view('daftarpengajar');

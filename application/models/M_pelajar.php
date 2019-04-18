@@ -11,6 +11,7 @@ class M_pelajar extends CI_Model {
     }
     public function get_pelajar_username($username) {
         $query = $this->db->get_where('pelajar', array('username' => $username));
-        return $query->row_array();
+        return $query;
     }
+    
 }

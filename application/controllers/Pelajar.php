@@ -5,6 +5,7 @@ class Pelajar extends CI_Controller {
 	public function __construct(){
             parent::__construct();
             $this->load->model('M_pelajar');
+            $this->load->model('M_matkul');
     }
 	public function proses_tambah(){
         $pelajar = array(
@@ -32,11 +33,14 @@ class Pelajar extends CI_Controller {
     } else {
         Echo "Data anda gagal diupdate. Ulangi sekali lagi".mysql_error();
     }
-        redirect('/Home/daftar');
+        $this->load->view('pendaftaran');
          
 	}
-    public function home_pelajar(){
-        $this->load->view('Hloginpelajar');
+     public function modul_pelajar($username){
+        $data['username'] = $username;
+        $data['matkul']['pelajar'] = $this->M_matkul->get_matkul();
+        $this->load->view('Modulpelajar',$data);
     }
+    
 	
 }

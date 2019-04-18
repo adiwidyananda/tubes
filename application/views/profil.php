@@ -19,8 +19,9 @@
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/profil.css">
 </head>
 <body>
+	<!-- ?php $profil['pengajar'] ?> -->
 	<div class="menu">
-  		<img style="max-height:25px;max-width: 25px; " src="gambar/logo.png">
+  		<img style="max-height:25px;max-width: 25px; " src="<?= base_url() ?>assets/gambar/logo.png">
   		<b>EXPERT COURSE</b>
   		<ul>
   			<li><b>Modul</b></li>
@@ -33,11 +34,11 @@
 	</div>
 	<div style="background-color: #f8f8f8;" class="isi">
 		<center>
-		<img width="200px" height="200px" src="gambar/logo2.png">
-		<h3>Nama</h3>
+		<img width="200px" height="200px" src="<?= base_url() ?>assets/gambar/logo2.png">
+		<h3><?php echo $profil['pengajar']['nama'] ?></h3>
 		</center>
 		<div class="container mt-3">
-  <form action="/action_page.php">
+  <form method="post" action="<?= base_url() ?>index.php/Pengajar/proses_edit">
   	<div style="background-color: white;" class="container">
   		<div class="row">
   			<div style="border: 1px solid #ddd; padding: 0px;" class="col-sm-6">
@@ -49,51 +50,51 @@
 			      <div class="input-group-prepend">
 			        <span class="input-group-text"><i class="fas fa-user"></i></span>
 			      </div>
-			      <input  type="text" class="form-control" placeholder="Username" id="usr" name="username">
+			      <input  type="text" class="form-control" disabled value="<?php echo $profil['pengajar']['username'] ?>" placeholder="Username" id="usr" name="username">
 			    </div>
 			    	<label style="margin-left: 10px;">Password</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			        <span class="input-group-text"><i class="fas fa-key"></i></span>
 			      </div>
-			      <input type="text" class="form-control" placeholder="Password" id="usr" name="password">
+			      <input type="password" class="form-control" value="<?php echo $profil['pengajar']['password'] ?>" placeholder="Password" id="usr" name="password">
 			    </div>
 			    <label style="margin-left: 10px;">Email</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			      </div>
-			      <input type="email" class="form-control" placeholder="Email" id="usr" name="email">
+			      <input type="email" class="form-control" value="<?php echo $profil['pengajar']['email'] ?>" placeholder="Email" id="usr" name="email">
 			    </div>
 			    <label style="margin-left: 10px;">Jurusan</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			      </div>
-			      <input type="text" class="form-control" placeholder="Jurusan" id="usr" name="jurusan">
+			      <input type="text" class="form-control" value="<?php echo $profil['pengajar']['jurusan'] ?>" placeholder="Jurusan" id="usr" name="jurusan">
 			    </div>
 			    <label style="margin-left: 10px;">Kelas</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			      </div>
-			      <input type="text" class="form-control" placeholder="Kelas" id="usr" name="kelas">
+			      <input type="text" class="form-control" value="<?php echo $profil['pengajar']['kelas'] ?>" placeholder="Kelas" id="usr" name="kelas">
 			    </div>
 			    <label style="margin-left: 10px; margin-top: 10px;">Tahun</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
 			      </div>
-			      <input  type="text" class="form-control" placeholder="Tahun" id="usr" name="tahun">
+			      <input  type="text" class="form-control" value="<?php echo $profil['pengajar']['angkatan'] ?>" placeholder="Tahun" id="usr" name="tahun">
 			    </div>
 			    <label style="margin-left: 10px;">Tempat Tanggal Lahir</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			      </div>
-			      <input type="text" class="form-control" placeholder="Tempat Tanggal Lahir" id="usr" name="ttl">
+			      <input type="text" class="form-control" value="<?php echo $profil['pengajar']['ttl'] ?>" placeholder="Tempat Tanggal Lahir" id="usr" name="ttl">
 			    </div>
 			    <label style="margin-left: 10px;">Alamat</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			      </div>
-			      <input type="text" class="form-control" placeholder="Alamat" id="usr" name="alamat">
+			      <input type="text" class="form-control" value="<?php echo $profil['pengajar']['alamat'] ?>" placeholder="Alamat" id="usr" name="alamat">
 			    </div>
 
 			</div>
@@ -106,14 +107,14 @@
 			      <div class="input-group-prepend">
 			        <span class="input-group-text">@</span>
 			      </div>
-			      <input  type="text" class="form-control" placeholder="Id Line" id="usr" name="line">
+			      <input  type="text" class="form-control" value="<?php echo $profil['pengajar']['line'] ?>" placeholder="Id Line" id="usr" name="line">
 			    </div>
 			     <label style="margin-left: 10px; margin-top: 10px;">HP</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
 			      <div class="input-group-prepend">
 			        <span class="input-group-text"><i class="fas fa-phone"></i></span>
 			      </div>
-			      <input  type="text" class="form-control" placeholder="HP" id="usr" name="hp">
+			      <input  type="text" class="form-control" value="<?php echo $profil['pengajar']['hp'] ?>" placeholder="HP" id="usr" name="hp">
 			    </div>
 			    <label style="margin-left: 10px; margin-top: 10px;">Facebook</label>
 			    <div style="margin-left: 10px; width: 530px;" class="input-group mb-3">
@@ -145,7 +146,7 @@
 			    </div>
 			    <center><label style="color: #e2e2e2;">____________________________________________________________________</label></center>
 			<button type="button" class="butn"><i style="margin-right: 4px;" class="fas fa-times"></i>Reset</button>
-			<button type="button" class="btn btn-success"><i style="margin-right: 4px;" class="fas fa-check"></i>Update</button>
+			<button type="Submit" class="btn btn-success"><i style="margin-right: 4px;" class="fas fa-check"></i>Update</button>
 			</div>
 </div>
 </div>
@@ -156,9 +157,9 @@
 <div class="bottom">
     <p>Experts Course 2019</p>
     <p style="margin-left: 800px;">Follow Us:</p>
-    <img class="logo3"src="gambar/logo/facebook.png" style="width: 20px;height: 20px;">
-    <img class="logo3"src="gambar/logo/instagram.png" style="width: 20px;height: 20px;margin-right: 5px;">
-    <img class="logo3"src="gambar/logo/youtube.png" style="width: 20px;height: 20px;">
+    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/facebook.png" style="width: 20px;height: 20px;">
+    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/instagram.png" style="width: 20px;height: 20px;margin-right: 5px;">
+    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/youtube.png" style="width: 20px;height: 20px;">
   </div>
 
 </body>

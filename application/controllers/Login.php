@@ -13,8 +13,8 @@ class Login extends CI_Controller {
         $password = $this->input->post('password');
         $hasil = $this->M_login->login_pelajar($username,$password);
         if ($hasil['ada']>0) {
-            $data = $this->M_pelajar->get_pelajar_username($username);
-            redirect('Pelajar/home_pelajar',$data);
+            $data['username'] = $username; 
+            $this->load->view('Hloginpelajar',$data);
         }
         else {         
             redirect('Home/login');
@@ -25,8 +25,8 @@ class Login extends CI_Controller {
         $password = $this->input->post('password');
         $hasil = $this->M_login->login_pengajar($username,$password);
         if ($hasil['ada']>0) {
-            $data = $this->M_pengajar->get_pengajar_username($username);
-            redirect('Pengajar/home_pengajar',$data);
+            $data['username'] = $username;
+            $this->load->view('homeLogin',$data);
         }
         else {         
             redirect('Home/loginpengajar');

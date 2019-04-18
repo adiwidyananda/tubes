@@ -20,15 +20,15 @@
 </head>
 <body>
 	<div class="menu">
-  		<img style="max-height:25px;max-width: 25px; " src="gambar/logo.png">
+  		<img style="max-height:25px;max-width: 25px; " src="<?= base_url() ?>assets/gambar/logo.png">
   		<b>EXPERT COURSE</b>
   		<ul>
-  			<li><b>Modul</b></li>
-  			<li><b>Presensi</b></li>
-  			<li><b>Pembayaran</b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/modul_pengajar/<?php echo $username; ?>">Modul</a></b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/presensi_pengajar/<?php echo $username; ?>">Presensi</a></b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/pembayaran_pengajar/<?php echo $username; ?>">Pembayaran</a></b></li>
   			<li><b>Tata Tertib</b></li>
-  			<li><b>Profile</b></li>
-  			<li><b>Logout</b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/profile_pengajar/<?php echo $username; ?>">Profile</a></b></li>
+  			<li><b><a style="text-decoration: none; color: #696969" href="<?= base_url() ?>index.php/Pengajar/logout_pengajar">Logout</a></b></li>
   		</ul>
 	</div>
 	
@@ -85,8 +85,8 @@
 					<h4 style="color: #313538;padding-bottom: 20px;">About Us</h4>
 					<h4 style="color: #313538;">Video Intro</h4>
 					<video width="500" controls>
-						<source src="video/Expert Course - Trailer.mp4" type="video/mp4">
-						<source src="video/Expert Course - Trailer.ogg" type="video/ogg">
+						<source src="<?= base_url() ?>assets/video/Expert Course - Trailer.mp4" type="video/mp4">
+						<source src="<?= base_url() ?>assets/video/Expert Course - Trailer.ogg" type="video/ogg">
 					</video>
 					
 				</div>
@@ -105,9 +105,9 @@
 		<div class="bottom">
 	    <p>Experts Course 2019</p>
 	    <p style="margin-left: 800px;">Follow Us:</p>
-	    <img class="logo3"src="gambar/logo/facebook.png" style="width: 20px;height: 20px;">
-	    <img class="logo3"src="gambar/logo/instagram.png" style="width: 20px;height: 20px;margin-right: 5px;">
-	    <img class="logo3"src="gambar/logo/youtube.png" style="width: 20px;height: 20px;">
+	    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/facebook.png" style="width: 20px;height: 20px;">
+	    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/instagram.png" style="width: 20px;height: 20px;margin-right: 5px;">
+	    <img class="logo3"src="<?= base_url() ?>assets/gambar/logo/youtube.png" style="width: 20px;height: 20px;">
 	 </div>
 </body>
 </html>
